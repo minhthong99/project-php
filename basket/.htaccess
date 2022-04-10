@@ -1,0 +1,39 @@
+RewriteEngine On 
+
+RewriteBase /basket/
+
+
+
+RewriteRule ^trang-chu$ index.php
+
+RewriteRule ^lien-he$ contact.php
+
+RewriteRule ^tin-tuc$  blog.php
+
+RewriteRule ^tai-khoan$ account.php
+
+
+RewriteRule ^cart$ shopping-cart.php
+
+RewriteRule ^wishlist$ my-wishlist.php
+
+RewriteRule ^signin$ login.php
+
+RewriteRule ^signup$ register.php
+
+RewriteRule ^tin-tuc/(.*)-([0-9]*).html$ blog-details.php?blog_id=$2
+
+RewriteRule ^product/(.*)-([0-9]*).html$  product.php?product_id=$2
+
+RewriteRule ^(.*)-([0-9]*)$ shop.php?cat_id=$2
+
+RewriteRule  ^(.*)-([0-9]*)-subcat-([0-9]*)$ shop.php?cat_id=$2&subcat=$3
+
+RewriteRule ^(.*)-([0-9]*)-page-([0-9]*)$ shop.php?cat_id=$2&page=$3
+
+
+
+
+
+
+
